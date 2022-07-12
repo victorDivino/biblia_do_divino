@@ -1,8 +1,15 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "./biblia_do_divino_app"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"terminal.integrated.defaultProfile.windows": "PowerShell",
+		"cSpell.words": [
+			"biblia",
+			"datasource",
+			"mockito"
+		]
+	}
 }
