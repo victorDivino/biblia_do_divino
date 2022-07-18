@@ -1,8 +1,21 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:equatable/equatable.dart';
-
-part 'search_book_state.dart';
+import 'search_book_state.dart';
+import '../../domain/repositories/book_repository.dart';
 
 class SearchBookCubit extends Cubit<SearchBookState> {
-  SearchBookCubit() : super(SearchBookInitial());
+  final BookRepository bookRepository;
+
+  SearchBookCubit(this.bookRepository) : super(InitialState()) {
+    getBooks();
+  }
+
+  void getBooks() async {
+    try {
+      emit(LoadingState());
+      final books = await bookRepository.getAll();
+      emit(LoadedState(books));
+    } catch (e) {
+      emit(ErrorState());
+    }
+  }
 }

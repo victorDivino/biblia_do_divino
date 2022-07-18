@@ -1,4 +1,4 @@
 class Book {
-  String? name;
+  String name;
   Book({required this.name});
 }
