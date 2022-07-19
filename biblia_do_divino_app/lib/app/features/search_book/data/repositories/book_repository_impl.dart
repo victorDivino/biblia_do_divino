@@ -1,8 +1,8 @@
 import 'dart:convert';
-import 'package:biblia_do_divino_app/app/features/search_book/data/repositories/book_mapper.dart';
-import 'package:biblia_do_divino_app/app/features/search_book/domain/entities/book.dart';
-import 'package:biblia_do_divino_app/app/features/search_book/domain/repositories/book_db.dart';
-import 'package:biblia_do_divino_app/app/features/search_book/domain/repositories/book_repository.dart';
+import '../../domain/entities/book.dart';
+import '../../domain/repositories/book_db.dart';
+import '../../domain/repositories/book_repository.dart';
+import 'book_mapper.dart';
 
 class BookRepositoryImpl implements BookRepository {
   final BookDb _bookDB;

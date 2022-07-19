@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'search_book_state.dart';
 import '../../domain/repositories/book_repository.dart';
+import 'search_book_state.dart';
 
 class SearchBookCubit extends Cubit<SearchBookState> {
   final BookRepository bookRepository;

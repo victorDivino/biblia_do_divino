@@ -1,7 +1,6 @@
-import 'package:biblia_do_divino_app/app/features/search_book/presentation/cubit/search_book_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import '../cubit/search_book_cubit.dart';
 import '../cubit/search_book_state.dart';
 
 class BookListPage extends StatefulWidget {
